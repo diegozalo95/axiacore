@@ -1,0 +1,22 @@
+$screen-sm:                                 569px;
+$screen-md:                                 768px;
+$screen-lg:                                 1200px;
+
+// ------------- Colors
+$main-color:                                #0000A3;
+$custom-color:                              #101111;
+$white-color:                               #ffffff;
+$black-color:                               #000000;
+$almost-white-color:                        #F4F4F4;
+$gray-color:                                #0F0F0F;
+$light-gray-color:                          #E5E5E5;
+$mid-gray-color:                            #6D7275;
+
+// ------------- Fonts
+$main-font:                                 SFMono-Regular;
+$main-font-medium:                          SFMono-Medium;
+$main-font-bold:                            SFMono-Bold;
+$font-face-base:                            $main-font, $main-font-medium, $main-font-bold;
+$title-size:                                4rem;
+$subtitle-size:                             2.5rem;
+$text-size:                                 1.6rem;

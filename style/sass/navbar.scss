@@ -1,0 +1,75 @@
+.navbar {
+  background-color: $gray-color;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+
+  &__container {
+    @include container;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    &--left,
+    &--right {
+      align-items: center;
+      display: flex;
+    }
+  }
+
+  &__menu {
+    &-button {
+      background-color: transparent;
+      border: 0;
+      padding: 0;
+    }
+
+    &-icon {
+      filter: invert(100%);
+    }
+  }
+
+  &__logo {
+    margin-left: 1.3rem;
+
+    &-img {
+      filter: invert(100%);
+    }
+  }
+
+  &__search {
+    &-button {
+      background-color: transparent;
+      border: 0;
+      padding: 0;
+    }
+
+    &-icon {
+      filter: invert(100%);
+    }
+  }
+
+  &__cart {
+    position: relative;
+    margin-left: 1.7rem;
+
+    &-icon {
+      filter: invert(100%);
+    }
+
+    &-count {
+      align-items: center;
+      background-color: $main-color;
+      border-radius: 50%;
+      color: $white-color;
+      display: none;
+      font-size: 1.2rem;
+      height: 1.6rem;
+      justify-content: center;
+      position: absolute;
+      right: -.8rem;
+      top: -.3rem;
+      width: 1.6rem;
+    }
+  }
+}

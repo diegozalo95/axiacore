@@ -1,0 +1,9 @@
+@mixin container (
+  $padding-x:     1.5rem,
+  $padding-y:     1.5rem
+) {
+  margin: auto;
+  max-width: 120rem;
+  padding: $padding-y $padding-x;
+  width: 100%;
+}

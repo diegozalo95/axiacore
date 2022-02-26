@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend test</title>
+  <link rel="icon" type="image/svg" href="assets/svg/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/css/style.css">
+
+</head>
+<body>
+  <div class="navbar">
+    <div class="navbar__container">
+      <div class="navbar__container--left">
+        <div class="navbar__menu">
+          <button class="navbar__menu-button">
+            <img src="assets/svg/menu.svg"
+              class="navbar__menu-icon"
+              alt="">
+          </button>
+        </div>
+        <div class="navbar__logo">
+          <a href="/" class="navbar__logo-link">
+            <img src="assets/svg/logo.svg"
+              class="navbar__logo-img"
+              alt="">
+          </a>
+        </div>
+      </div>
+      <div class="navbar__container--right">
+        <div class="navbar__search">
+          <button class="navbar__menu-button">
+            <img src="assets/svg/search.svg"
+            class="navbar__menu-icon"
+            alt="">
+          </button>
+        </div>
+        <div class="navbar__cart">
+          <img src="assets/svg/cart.svg"
+            class="navbar__cart-icon"
+            alt="">
+          <span class="navbar__cart-count"></div>
+        </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="products">
+    <div class="products__container">
+      <h2 class="products__title">Cervezas</h2>
+
+      <div class="products__list" id="products"></div>
+
+      <div class="products__others">
+        <a href="/"
+          alt="Sigue mercando Vinos"
+          class="products__others-link">
+          Sigue mercando <span class="products__others-category">Vinos</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="filter">
+    <button class="filter__button filter__button--fixed">Filtrar
+      <span class="filter__button-count"></span>
+    </button>
+    <div class="filter__content">
+      <button class="filter__close"></button>
+      <p class="filter__text">Filtros</p>
+      <form action="" class="filter__form">
+        <div class="filter__form-item">
+          <label class="filter__form-label" for="1">Rubia </label>
+          <input type="checkbox" class="filter__checkbox" id="1" name="1" value="Rubia">
+        </div>
+        <div class="filter__form-item">
+          <label class="filter__form-label" for="2">Morena </label>
+          <input type="checkbox" class="filter__checkbox" id="2" name="2" value="Morena">
+        </div>
+        <div class="filter__form-item">
+          <label class="filter__form-label" for="3">Roja </label>
+          <input type="checkbox" class="filter__checkbox" id="3" name="3" value="Roja">
+        </div>
+        <div class="filter__form-buttons">
+          <button class="filter__button--reset" type="reset">Limpiar</button>
+          <button class="filter__button filter__button--inner" type="submit">Filtrar
+            <span class="filter__button-count"></span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-contact">
+      <div class="footer-contact__container">
+        <p class="footer-contact__title">¿Podemos ayudarle?</p>
+        <div class="footer-contact__list">
+          <div class="footer-contact__item">
+            <a href="/"
+              alt="Chat"
+              class="footer-contact__link">
+              <div class="footer-contact__image">
+                <img src="assets/svg/intercom.svg"
+                  class="footer-contact__img"
+                  alt="">
+              </div>
+              <span class="footer-contact__text">Chat</span>
+            </a>
+          </div>
+          <div class="footer-contact__item">
+            <a href="/"
+              alt="Llamar"
+              class="footer-contact__link">
+              <div class="footer-contact__image">
+                <img src="assets/svg/phone.svg"
+                  class="footer-contact__img"
+                  alt="">
+              </div>
+              <span class="footer-contact__text">Llamar</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-content">
+      <div class="footer-content__container">
+        <div class="footer-nav">
+          <div class="footer-nav__list">
+            <div class="footer-nav__item">
+              <a href="/"
+                alt="Sobre nosotros"
+                class="footer-nav__link">Sobre nosotros</a>
+            </div>
+            <div class="footer-nav__item">
+              <a href="/"
+                alt="Medidas de seguridad (Covid-19)"
+                class="footer-nav__link">Medidas de seguridad (Covid-19)</a>
+            </div>
+            <div class="footer-nav__item">
+              <a href="/"
+                alt="Cómo mercar"
+                class="footer-nav__link">Cómo mercar</a>
+            </div>
+            <div class="footer-nav__item">
+              <a href="/"
+                alt="Proovedores"
+                class="footer-nav__link">Proovedores</a>
+            </div>
+            <div class="footer-nav__item">
+              <a href="/"
+                alt="Contáctenos"
+                class="footer-nav__link">Contáctenos</a>
+            </div>
+            <div class="footer-nav__item">
+              <a href="/"
+                alt="Zona de cobertura"
+                class="footer-nav__link">Zona de cobertura</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-social">
+          <div class="footer-social__list">
+            <div class="footer-social__item">
+              <a href="/"
+                alt="Instagram"
+                class="footer-social__link">
+                <img src="assets/svg/instagram.svg"
+                  class="footer-social__icon"
+                  alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-politic">
+          <div class="footer-politic__list">
+            <div class="footer-politic__item">
+              <a href="/"
+                alt="Política de tratamiento de datos personales"
+                class="footer-politic__link">Política de tratamiento de datos personales</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-rights">
+      <a href="https://axiacore.com/es/"
+        alt="@ 2020 Axiacore"
+        class="footer-rights__link">@ 2020 Axiacore</a>
+    </div>
+</footer>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>
