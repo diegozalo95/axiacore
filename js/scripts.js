@@ -136,9 +136,9 @@ const resetProducts = () => {
 }
 
 const resetFilter = () => {
-  filterIds = 0
+  filterIds = []
   countItemsFilter.forEach(e => {
+    e.innerHTML = filterIds.length
     e.style.display = 'none'
   })
-  e.innerHTML = filterIds.length
 }
