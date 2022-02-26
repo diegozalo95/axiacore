@@ -79,6 +79,10 @@ filter.addEventListener('click', e => {
     e.preventDefault()
     printfilterproduts(filterIds)
     filter.classList.toggle('filter--active')
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
   }
 
   if (e.target.classList.contains('filter__checkbox')) {
