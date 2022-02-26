@@ -88,7 +88,6 @@ filter.addEventListener('click', e => {
   if (e.target.classList.contains('filter__checkbox')) {
     if (e.target.checked) {
       filterIds.push(e.target.getAttribute('id'))
-      console.log(filterIds);
     } else {
       var newFilterIds = []
       filterIds.filter(item => {
@@ -97,7 +96,6 @@ filter.addEventListener('click', e => {
         }
         filterIds = newFilterIds
       })
-      console.log(filterIds);
     }
   }
 
@@ -105,6 +103,7 @@ filter.addEventListener('click', e => {
     resetProducts()
     filterCheckbox.forEach(e => { e.checked = false })
     printProducts(listPrint)
+    resetFilter()
   }
 
   countItemsFilter.forEach(e => {
@@ -127,7 +126,6 @@ const printfilterproduts = (ids) => {
         }
       })
     })
-    console.log(filterproduts);
     printProducts(filterproduts)
   }
 }
@@ -135,4 +133,12 @@ const printfilterproduts = (ids) => {
 const resetProducts = () => {
   productsContent.innerHTML = ''
   filterproduts = []
+}
+
+const resetFilter = () => {
+  filterIds = 0
+  countItemsFilter.forEach(e => {
+    e.style.display = 'none'
+  })
+  e.innerHTML = filterIds.length
 }
