@@ -83,6 +83,9 @@ filter.addEventListener('click', e => {
       top: 0,
       behavior: 'smooth'
     })
+    if (filterIds.length == 0) {
+      printProducts(listPrint)
+    }
   }
 
   if (e.target.classList.contains('filter__checkbox')) {
