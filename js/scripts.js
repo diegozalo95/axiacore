@@ -84,6 +84,7 @@ filter.addEventListener('click', e => {
       behavior: 'smooth'
     })
     if (filterIds.length == 0) {
+      resetProducts()
       printProducts(listPrint)
     }
   }
